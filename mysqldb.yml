@@ -3,7 +3,7 @@
   tasks:
     - name: Install MYSQL databas
       action: apt pkg={{ item }} state=latest
-	with_items:
+      with_items:
          - libmysqlclient-dev
          - python-mysqldb
          - mysql-server
